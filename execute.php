@@ -15,8 +15,8 @@ $lastname = isset($message['chat']['last_name']) ? $message['chat']['last_name']
 $username = isset($message['chat']['username']) ? $message['chat']['username'] : "";
 $date = isset($message['date']) ? $message['date'] : "";
 if($message['text']=="e ferr?")
-$text = "anche lui è gay";
-$text = "zito è gay";
+{$text = "anche lui è gay";}
+else $text = "zito è gay";
 
 header("Content-Type: application/json");
 $parameters = array('chat_id' => $chatId, "text" => $text);
