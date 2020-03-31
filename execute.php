@@ -29,12 +29,15 @@ if($message['text']=="e ferr?")
 else
   if{$message['text']=="waifu?"}
 {
-  sendPhoto(
+  /*sendPhoto(
   chat_id = chatId,
   photo = url,
   caption = "Telegram Logo"
-)
+)*/
+    $text=url;
     echo json_encode($parameters);
+    $parameters = array('chat_id' => $chatId, "text" => $text);
+    $parameters["method"] = "sendMessage";
 }
 else
 {
