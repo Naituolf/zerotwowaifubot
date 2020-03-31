@@ -14,7 +14,7 @@ $firstname = isset($message['chat']['first_name']) ? $message['chat']['first_nam
 $lastname = isset($message['chat']['last_name']) ? $message['chat']['last_name'] : "";
 $username = isset($message['chat']['username']) ? $message['chat']['username'] : "";
 $date = isset($message['date']) ? $message['date'] : "";
-$randomNumber = rand(1,99);
+$randomNumber = 1;
 $uno = "http://randomwaifu.altervista.org/images/00";
 $tre = "randomNumber.png";
 // la variabile $stringa conterrà la
