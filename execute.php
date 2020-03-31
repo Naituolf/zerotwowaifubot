@@ -37,9 +37,10 @@ else
   caption = "Telegram Logo"
 )*/
     
-    echo json_encode($parameters);
+    
     $parameters = array('chat_id' => $chatId, "text" => $url);
     $parameters["method"] = "sendMessage";
+    echo json_encode($parameters);
 }
 else
 {
