@@ -12,7 +12,7 @@ $username = isset($message['chat']['username']) ? $message['chat']['username'] :
 $date = isset($message['date']) ? $message['date'] : "";
 
 
-if($counter==10)
+if($counter>=10)
 {
   $counter=0;
   $numero=rand(1, 99);
