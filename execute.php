@@ -31,7 +31,7 @@ if((strpos($message['text'], 'ferr') !== false)or(strpos($message['text'], 'Ferr
   $parameters["method"] = "sendMessage";
   echo json_encode($parameters);
 }
-elseif($message['text']=="/waifu")
+elseif(($message['text']=="/waifu")or($message['text']=="/waifu@zerotwo_waifubot"))
 {
     $numero=rand(1, 99);
     $text = "http://randomwaifu.altervista.org/images/00".$numero.".png";
