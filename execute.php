@@ -16,7 +16,7 @@ $username = isset($message['chat']['username']) ? $message['chat']['username'] :
 $date = isset($message['date']) ? $message['date'] : "";
 // la variabile $stringa conterrà la
 // stringa "Naviga su html.it "
-if($message['text']=="e ferr?")
+if((strpos($message['text'], 'ferr') !== false)or(strpos($message['text'], 'Ferr') !== false))
 {
   $text = "anche lui è gay";
   header("Content-Type: application/json");
