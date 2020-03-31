@@ -16,7 +16,7 @@ $username = isset($message['chat']['username']) ? $message['chat']['username'] :
 $date = isset($message['date']) ? $message['date'] : "";
 $randomNumber = rand(1,99);
 $url = "http://randomwaifu.altervista.org/images/00";
-$url .= randomNumber;
+$url .= $randomNumber;
 $url .= ".png";
 if($message['text']=="e ferr?")
 {
@@ -34,9 +34,9 @@ else
   photo = url,
   caption = "Telegram Logo"
 )*/
-    $text=$url;
+    
     echo json_encode($parameters);
-    $parameters = array('chat_id' => $chatId, "text" => $text);
+    $parameters = array('chat_id' => $chatId, "text" => $url);
     $parameters["method"] = "sendMessage";
 }
 else
