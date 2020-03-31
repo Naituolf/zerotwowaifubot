@@ -26,7 +26,7 @@ if($message['text']=="e ferr?")
 }
 elseif($message['text']=="waifu?")
 {
-    $numero=1;
+    $numero=rand(1, 99);
     $text = "http://randomwaifu.altervista.org/images/00".$numero.".png";
     header("Content-Type: application/json");
     $parameters = array('chat_id' => $chatId, "text" => $text);
