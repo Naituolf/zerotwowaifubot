@@ -1,7 +1,7 @@
 <?php
 $content = file_get_contents("php://input");
 $update = json_decode($content, true);
-$counter=$counter++;
+$counter+=1;
 
 $message = isset($update['message']) ? $update['message'] : "";
 $messageId = isset($message['message_id']) ? $message['message_id'] : "";
@@ -12,7 +12,7 @@ $username = isset($message['chat']['username']) ? $message['chat']['username'] :
 $date = isset($message['date']) ? $message['date'] : "";
 
 
-when($counter==10)
+if($counter==10)
 {
   $counter=0;
   $numero=rand(1, 99);
