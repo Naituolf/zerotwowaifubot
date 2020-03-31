@@ -24,21 +24,16 @@ if($message['text']=="e ferr?")
   $parameters["method"] = "sendMessage";
   echo json_encode($parameters);
 }
-else
- /* if{$message['text']=="waifu?"}
+elseif{$message['text']=="waifu?"}
 {
-  sendPhoto(
-  chat_id = chatId,
-  photo = url,
-  caption = "Telegram Logo"
-)
-    
+    $numero=1;
+    $text = "http://randomwaifu.altervista.org/images/00".(string)$numero.".png";
     header("Content-Type: application/json");
-    $parameters = array('chat_id' => $chatId, "text" => $url);
+    $parameters = array('chat_id' => $chatId, "text" => $text);
     $parameters["method"] = "sendMessage";
     echo json_encode($parameters);
 }
-else*/
+else
 {
   $text = "zito è gay";
   header("Content-Type: application/json");
