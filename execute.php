@@ -23,7 +23,7 @@ if($message['text']=="e ferr?")
   echo json_encode($parameters);
 }
 else
-  if{$message['text']=="waifu?"}
+  /*if{$message['text']=="waifu?"}
 {
   sendPhoto(
   chat_id = chatId,
@@ -31,7 +31,7 @@ else
   caption = "Telegram Logo"
 )
 }
-else
+else*/
 {
   $text = "zito è gay";
   header("Content-Type: application/json");
