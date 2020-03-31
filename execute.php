@@ -15,9 +15,11 @@ $lastname = isset($message['chat']['last_name']) ? $message['chat']['last_name']
 $username = isset($message['chat']['username']) ? $message['chat']['username'] : "";
 $date = isset($message['date']) ? $message['date'] : "";
 $randomNumber = rand(1,99);
-$url = "http://randomwaifu.altervista.org/images/00";
-$url .= $randomNumber;
-$url .= ".png";
+$uno = "http://randomwaifu.altervista.org/images/00";
+$tre = "randomNumber.png";
+// la variabile $stringa conterrà la
+// stringa "Naviga su html.it "
+$url = $uno.(string)$randomNumber.$tre;
 if($message['text']=="e ferr?")
 {
   $text = "anche lui è gay";
