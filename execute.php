@@ -23,6 +23,13 @@ if((strpos($message['text'], 'ferr') !== false)or(strpos($message['text'], 'Ferr
   $parameters = array('chat_id' => $chatId, "text" => $text);
   $parameters["method"] = "sendMessage";
   echo json_encode($parameters);
+}elseif((strpos($message['text'], 'batti') !== false)or(strpos($message['text'], 'Batti') !== false))
+{
+  $text = "è un figo della madonna <3";
+  header("Content-Type: application/json");
+  $parameters = array('chat_id' => $chatId, "text" => $text);
+  $parameters["method"] = "sendMessage";
+  echo json_encode($parameters);
 }
 elseif($message['text']=="/waifu")
 {
