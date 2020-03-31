@@ -14,13 +14,8 @@ $firstname = isset($message['chat']['first_name']) ? $message['chat']['first_nam
 $lastname = isset($message['chat']['last_name']) ? $message['chat']['last_name'] : "";
 $username = isset($message['chat']['username']) ? $message['chat']['username'] : "";
 $date = isset($message['date']) ? $message['date'] : "";
-$randomNumber = 1;
-$url= "ciao";
-$uno = "http://randomwaifu.altervista.org/images/00";
-$tre = "randomNumber.png";
 // la variabile $stringa conterrà la
 // stringa "Naviga su html.it "
-//$url = $uno.(string)$randomNumber.$tre;
 if($message['text']=="e ferr?")
 {
   $text = "anche lui è gay";
@@ -30,20 +25,20 @@ if($message['text']=="e ferr?")
   echo json_encode($parameters);
 }
 else
-  if{$message['text']=="waifu?"}
+ /* if{$message['text']=="waifu?"}
 {
-  /*sendPhoto(
+  sendPhoto(
   chat_id = chatId,
   photo = url,
   caption = "Telegram Logo"
-)*/
+)
     
-    
+    header("Content-Type: application/json");
     $parameters = array('chat_id' => $chatId, "text" => $url);
     $parameters["method"] = "sendMessage";
     echo json_encode($parameters);
 }
-else
+else*/
 {
   $text = "zito è gay";
   header("Content-Type: application/json");
